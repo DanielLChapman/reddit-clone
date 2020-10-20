@@ -1,0 +1,25 @@
+.top-bar {
+    height: 48px;
+    background: white;
+    border-bottom: 1px solid #dae0e6
+}
+
+.website-icon span {
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 11px;
+    position: relative;
+    margin-left: 15px;
+    text-transform: lowercase;
+}
+
+.top-bar img {
+    max-width: 40px;
+    max-height: 40px;
+    width: auto;
+    height: auto;
+    float: left;
+    margin-top: 4px;
+    margin-left: 25px;
+    position: relative;
+}

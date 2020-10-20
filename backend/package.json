@@ -1,5 +1,5 @@
 {
-  "name": "template-backend",
+  "name": "reddit-clone",
   "version": "1.0.0",
   "description": "the backend of graphql react empty template",
   "scripts": {
