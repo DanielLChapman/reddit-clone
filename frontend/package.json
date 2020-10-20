@@ -4,7 +4,7 @@
   "description": "React, GraphQL, Next and Apollo",
   "main": "index.js",
   "scripts": {
-    "build:sass":"node-sass -r --output-style compressed scss/main.scss -o public",
+    "build:sass": "node-sass -r --output-style compressed scss/main.scss -o public",
     "dev": "concurrently --names \"scss, next\" --prefix name \"npm run watch:sass\" \"next -p 7777\"",
     "build": "next build",
     "start": "next start",
@@ -16,6 +16,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "apollo-boost": "^0.1.16",
     "apollo-client": "^2.4.2",
     "babel-core": "^7.0.0-bridge.0",

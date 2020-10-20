@@ -32,6 +32,10 @@ describe('tests the layout to make sure the required classes are there', () => {
         expect(container.find('.search-bar-main').length).toBe(1);
         expect(container.find('.login-button').length).toBe(1);
         expect(container.find('.signup-button').length).toBe(1);
+        expect(container.find('.signin-login-dropdown').length).toBe(1);
+        expect(container.find('.signin-login-dropdown').find('label').length).toBe(1);
+        expect(container.find('FontAwesomeIcon').length).toBe(2);
+        expect(container.find('.dropdown-button').length).toBe(1);
 
     })
     
