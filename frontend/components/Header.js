@@ -50,7 +50,6 @@ const Header = () => (
             </section>
             
         </div>
-        
     </div>
 )
 

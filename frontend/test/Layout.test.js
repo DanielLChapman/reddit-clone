@@ -45,13 +45,30 @@ describe('tests the layout to make sure the required classes are there', () => {
     //top navigation signed in
     //should have 'Reddit' 'Dropdown menu' 'search bar' 'popular' 'messages' 'account info'
 
+
+
     // Middle homepage
     // Nothing
-
     
 
     //Bottom Nav
-    //Should have 'Hot' 'New' 'Top' 'Wiki' 
+    //Should have 'Hot' 'New' 'Top' 'Rising' and customizable ones
+    it ('checks the homepage main content', () => {
+        const wrapper = mount(<Page />);
+        let container = wrapper.find('main');
+        expect(container.find('.filter-bar').length).toBe(1);
+        let filterBar = container.find('.filter-bar');
+        expect(filterBar.find('li').length).toBe(5);
+        expect(filterBar.find('.active').length).toBe(1);
+        filterBar.find('li').at(4).simulate('click');
+
+        wrapper.update();
+        container = wrapper.find('main');
+        filterBar = container.find('.filter-bar');
+        let objectToTest = filterBar.find('.active');
+        expect(objectToTest).toMatchObject(filterBar.find('li').at(4));
+    })
+
 
     //Should have Main
     //Should have left and right classes

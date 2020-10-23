@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
+import HomePageMain from './Homepage/HomePageMain'
 import { useRouter } from 'next/router'
 
 class HomePageClass extends Component {
@@ -7,7 +8,7 @@ class HomePageClass extends Component {
         return (
             <div>
                 <Header />
-                {this.props.children}
+                <HomePageMain {...this.props} />
             </div>
         );
     }
