@@ -10,7 +10,7 @@ const Header = () => (
         <div className="top-bar">
             <Link href="/" >
                 <a className="website-icon">
-                    <img src="./icon.png" /><span>Reddit</span></a>
+                    <img src={`/icon.png`} /><span>Reddit</span></a>
             </Link>
             {// signed in only <Nav />
             }

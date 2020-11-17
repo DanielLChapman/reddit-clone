@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FilterBar from '../FilterBar';
+import SmallPosts from '../SmallPosts';
 
 class HomePageMain extends Component {
     render() {
@@ -7,6 +8,7 @@ class HomePageMain extends Component {
             <main className="homepage-grid-container">
                 <section className="homepage-left">
                     <FilterBar />
+                    <SmallPosts />
                 </section>
                 <section className="homepage-right">
 
