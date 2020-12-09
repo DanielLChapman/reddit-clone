@@ -10,7 +10,13 @@ class TextSmallPost extends Component {
         if (this.props.data.link !== '') {
             return (
                 <>
-                    <h3>Link</h3>
+                    <h4>{this.props.data.title}</h4>
+                    <section className={`reddit-post-right-bottom-description ${afterClass}`} >
+                        <a href={this.props.data.link}>{
+                            this.props.data.link.split('').length > 40 ? this.props.data.link.split('').splice(0,40).join('') + "..." : this.props.data.link
+                        }</a>
+                    </section>
+                    
                 </>
             )
         }
