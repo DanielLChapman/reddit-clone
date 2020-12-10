@@ -16,10 +16,10 @@ class MediaSmallPost extends Component {
             if(ampersandPosition != -1) {
             video_id = video_id.substring(0, ampersandPosition);
             }
-            return (<>
-                <iframe width="560" height="315" src={`https://www.youtube.com/embed/${video_id}`} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            return (<div className="small-post-youtube-media-container">
+                <iframe className="small-post-youtube-video" width="560" height="315" src={`https://www.youtube.com/embed/${video_id}`} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 {inputURL}
-                </>
+                </div>
             )
         } else if (beginning.includes('vimeo')) {
             return (<>
@@ -35,7 +35,7 @@ class MediaSmallPost extends Component {
             return (
                 <>
                     <blockquote className="imgur-embed-pub" lang="en" data-id={`a/${imgur_id}`}  >
-                        <a href={`//imgur.com/a/${imgur_id}`}> View On Imgur</a>
+                        <a href={`//imgur.com/a/${imgur_id}`}> View On Imgur </a>
                     </blockquote>
                     <script async src="//s.imgur.com/min/embed.js" charSet="utf-8"></script>
                 </>

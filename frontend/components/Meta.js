@@ -9,7 +9,7 @@ const Meta = () => (
         <link rel="stylesheet" type="text/css" href="/main.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
         <title>Reddit Clone</title>
-        <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+        <script async src="//s.imgur.com/min/embed.js" charSet="utf-8"></script>
     </Head>
 
 )
